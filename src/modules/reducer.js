@@ -4,7 +4,7 @@ export const SET_PERSONAL_DETAILS = 'reducer/SET_PERSONAL_DETAILS'
 const initialState = {
   source: "",
   destination: "",
-  email: ""
+  email: "",
 }
 
 export default (state = initialState, action) => {
@@ -13,7 +13,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         source: action.props.source,
-        destination: action.props.destination
+        destination: action.props.destination,
       }
 
     case SET_PERSONAL_DETAILS:
